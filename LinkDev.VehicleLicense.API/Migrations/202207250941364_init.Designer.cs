@@ -7,13 +7,13 @@ namespace LinkDev.VehicleLicense.API.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class addRequstStatus : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addRequstStatus));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "202207241507466_addRequstStatus"; }
+            get { return "202207250941364_init"; }
         }
         
         string IMigrationMetadata.Source

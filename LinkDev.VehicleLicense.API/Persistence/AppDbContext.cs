@@ -9,10 +9,10 @@ namespace LinkDev.VehicleLicense.API.Persistence
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext() : base("Default")
+        public AppDbContext() : base("LinkServer")
         {
 
         }
-        DbSet<Request> Requests;
+        public DbSet<Request> Requests { get; set; }
     }
 }
