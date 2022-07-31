@@ -14,11 +14,11 @@ namespace LinkDev.VehicleLicense.API.Services
         {
             ProcessInstance processInstance = null;
 
-            using(k2Connections k2Connections = new k2Connections())
+            using (k2Connections k2Connections = new k2Connections())
             {
                 k2Connections.InitConnection(userName);
-                
-                processInstance= k2Connections.K2Connect.CreateProcessInstance(k2Constants.ProcessesShortNames.NewVehicleLicenseWorkflow);
+
+                processInstance = k2Connections.K2Connect.CreateProcessInstance(k2Constants.ProcessesShortNames.NewVehicleLicenseWorkflow);
 
                 processInstance.Folio = request.RequestNumber;
 

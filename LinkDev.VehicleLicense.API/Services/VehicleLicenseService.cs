@@ -26,8 +26,7 @@ namespace LinkDev.VehicleLicense.API.Services
 
             K2Service k2Service = new K2Service();
 
-             request.ProcessInsId = k2Service.StartWorkflow(requestDto.Requester, request);
-
+            request.ProcessInsId = k2Service.StartWorkflow(requestDto.Requester, request);
 
             using (AppDbContext dbContext = new AppDbContext())
             {

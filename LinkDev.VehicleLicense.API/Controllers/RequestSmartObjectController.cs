@@ -12,23 +12,22 @@ namespace LinkDev.VehicleLicense.API.Controllers
     public class RequestSmartObjectController : ApiController
     {
 
-        [System.Web.Http.HttpPost]
-        public IHttpActionResult SubmitRequest(NewRequestDto requestDto)
-        {
-            VehicleLicenseService vehicleLicenseService = new VehicleLicenseService();
-
-            vehicleLicenseService.Create(requestDto);
-
-            return Ok();
-
-        }
-
 
         // GET: RequestSmartObject
         [System.Web.Http.HttpGet]
-        public IHttpActionResult Test()
+        public IHttpActionResult ChangeStatus(string folio, string status)
         {
-            return Ok("Ahmed Michael Mohamed");
+            VehicleLicenseService vehicleLicenseService = new VehicleLicenseService();
+            vehicleLicenseService.UpdateStatus(folio, status);
+
+            return Ok();
+        }
+
+
+        [System.Web.Http.HttpGet]
+        public IHttpActionResult TestApi()
+        {
+            return Ok("Mohamed Abd El Wahab !");
         }
     }
 }
