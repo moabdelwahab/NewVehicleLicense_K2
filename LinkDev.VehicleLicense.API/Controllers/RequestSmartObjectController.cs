@@ -24,10 +24,6 @@ namespace LinkDev.VehicleLicense.API.Controllers
         }
 
 
-        [System.Web.Http.HttpGet]
-        public IHttpActionResult TestApi()
-        {
-            return Ok("Mohamed Abd El Wahab !");
-        }
+ 
     }
 }
