@@ -10,7 +10,7 @@ namespace LinkDev.VehicleLicense.API.Helpers
 
         public struct ProcessesShortNames
         {
-            public const string NewVehicleLicenseWorkflow = "NewVehicleLicenseWorkflow";
+            public const string NewVehicleLicenseWorkflow = "NewVehicleLicense\\NewVehicleLicenseWorkflow";
         }
 
 

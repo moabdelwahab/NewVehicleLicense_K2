@@ -242,6 +242,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\k2Connections.cs" />
     <Compile Include="Services\K2Service.cs" />
+    <Compile Include="Services\K2TaskService.cs" />
     <Compile Include="Services\VehicleLicenseService.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -19,7 +19,7 @@ namespace LinkDev.VehicleLicense.API.Models
         public string VehicleOwnerName { get; set; }
         public string NationalId { get; set; }
         public string ModifiedBy { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public DateTime ModifiedDate { get; set; } = DateTime.Now;
         public int ProcessInsId { get; set; }
         public string RequestStatus { get; set; }
     }
